@@ -1,0 +1,40 @@
+name: Build DocFX and Deploy to gh-page
+
+on:
+  push:
+    branches:
+      - main  # main 브랜치에서 푸시 이벤트 발생 시 실행
+    paths:
+      - "DocFX/**"  #  src/DocFX/** 폴더 내 변경 사항이 있을 경우에만 실행
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 레포지토리 체크아웃
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. .NET 설치
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0'  # DocFX에 필요한 .NET 버전
+
+      # 3. DocFX 설치
+      - name: Install DocFX
+        run: dotnet tool install -g docfx
+
+      # 4. DocFX 빌드 실행
+      - name: Build DocFX
+        run: docfx build DocFX/docfx.json
+
+      # 5. 빌드 결과를 GitHub Pages 브랜치의 /docs 폴더에 배포
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.PERSONAL_TOKEN }}  # settings/Secrets and variables/Actions에 저장된 토큰 이름
+          publish_dir: DocFX/_site               # DocFx 빌드 결과물 경로
+          publish_branch: main                  # 배포 대상 브랜치
+          destination_dir: docs                     # main 브랜치에서 결과물이 저장될 폴더

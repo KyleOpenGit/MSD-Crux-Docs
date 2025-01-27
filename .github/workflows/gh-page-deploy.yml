@@ -30,11 +30,16 @@ jobs:
       - name: Build DocFX
         run: docfx build DocFX/docfx.json
 
-      # 5. 빌드 결과를 /docs 디렉토리에 배포
+      # 5. 빌드 결과를 main 브랜치의 /docs 디렉토리에 복사하고 푸시
       - name: Deploy to /docs in main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 기본 GitHub 제공 토큰
         run: |
-          git config --global user.email "git@kyleopengit.com"
-          git config --global user.name "Github Workflow"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          rm -rf ./docs
+          mkdir -p ./docs
+          cp -r DocFX/_site/* ./docs/
           git add ./docs
           git commit -m "Deploy DocFX site to /docs [skip ci]" || echo "No changes to commit"
           git push origin main

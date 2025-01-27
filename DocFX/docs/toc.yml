@@ -1,4 +1,14 @@
-- name: Introduction
+- name: MSD Crux 소개
   href: introduction.md
-- name: Getting Started
-  href: getting-started.md
+- name: 프로그래밍 가이드
+  href: guide/p-guide.md
+  items:
+    - name: 솔루션 구조
+      href: guide/solution-structure.md
+    - name: Crux 서버
+      href: guide/crux/crux-server.md
+    - name: DevTool
+      href: guide/crux/dev-tool.md
+- name: REST API
+  href: rest-api.md
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>MESCADAS Crux | MESCADAS Crux </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="MESCADAS Crux | MESCADAS Crux ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/KyleOpenGit/MSD-Crux-Docs/blob/main/DocFX/docs/introduction.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MESCADAS Crux">
+            MESCADAS Crux
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="mescadas-crux">MESCADAS Crux</h1>
+
+<p>MESCADAS Crux는 <em><strong>MESCADAS 프로젝트</strong></em> 의 중앙 서버 웹애플리케이션으로, MESCADAS 핵심 서비스의 관리와 조율을 위한 중심 허브 역할을 수행하도록 설계됩니다. 강력하고 고성능의 .NET
+Core를 기반으로 구축된 MESCADAS Crux는 현대 애플리케이션을 위한 확장 가능하고 신뢰할 수 있는 기반을 제공합니다.</p>
+<blockquote>
+<p>이하, MSD Crux</p>
+</blockquote>
+<h2 id="msd-crux-서버-기능">MSD Crux 서버 기능</h2>
+<ul>
+<li>크로스 플랫폼 지원 (C# ASP.NET Core 8)</li>
+<li>높은 확장성</li>
+<li>Restful API</li>
+<li>TCP Socket Server</li>
+<li>비밀번호 암호화</li>
+<li>JWT (제이슨 웹 토큰) 발급 및 검증</li>
+<li>독립적인 테스팅</li>
+</ul>
+<h2 id="애플리케이션-아키텍처">애플리케이션 아키텍처</h2>
+<h3 id="layered-architecture">LAYERED ARCHITECTURE</h3>
+<p><img src="../res/img/layered-architecture.jpg" alt="레이어드 아키텍처"></p>
+<p>MSD Crux 서버의 코드는 계층형으로 나누어져 설계되었습니다. 이러한 계층형 모듈화는 기능 추가가 쉽습니다.</p>
+<p>인프라스트럭처 계층에서는 In-Memory 저장소와 PostgreSQL DB 저장소만 다루는 SQL가 작성되어 있지만, 여기에 MySQL을 위한 코드를 추가 작성하여 언제든 상황에따라 원하는 코드로 동작되도록 선택할
+수 있습니다.</p>
+<p>프리젠테이션 계층에는 지금은 웹API 기능과 소켓통신 기능이 같은 서버에 있지만 각각 다른 애플리케이션으로 분리해낼 수 있습니다.</p>
+<p>그리하여 여러기능을 독립적으로 분리한 마이크로 서비스로 확장하기 쉽게 설계 되었습니다.</p>
+<p>이렇게 여러 기능으로 분리해 낼 때 변경이 필요없는 계층은 코드를 재작성하거나 복사할 필요 없이 라이브러리 파일로 임포팅해서 개발이 가능합니다.</p>
+<p>이러한 분리구조는 또한 Unit Test를 가능케하여 각 계층별 코드를 독립적으로 테스팅할 수 있습니다.</p>
+<h3 id="headless-architecture">HEADLESS ARCHITECTURE</h3>
+<p><img src="../res/img/3-tier-headless-architecture.jpg" alt="3티어 아키텍처"></p>
+<p>MSD Crux 서버는 데이터 저장/조회를 위한 플러그인방식의 인터페이스 설계, 그리고 표준화된 통신 API 구현으로인해 Database나 클라이언트의 기능과는 완전하게 분리된 구조의 헤드리스 아키텍처로 구성됩니다.</p>
+<p>전체 시스템이 3-Tier 구조를 이룰 수 있어 클라우드 친화적으로 고가용성, 고성능의 서비스 제공을 꾀 할 수 있습니다</p>
+<p>클라우드 배포시 데이터베이스는 클러스터링을 구성하고, Crux 서버 애플리케이션을 수평적 스케일링에 유리합니다.</p>
+<p>또한 표준화된 API와 프로토콜 설계로 PC, MAC, 웹, 모바일, iOT 등 다양한 클라이언트가 만들어져도 손쉽게 대응 가능합니다.</p>
+<h2 id="db-보안-및-서버-보안">DB 보안 및 서버 보안</h2>
+<h3 id="네트워크-보안">네트워크 보안</h3>
+<p>위와 같은 헤드리스 아키텍처를 기반으로 사설 VPC/SUBNET 구성을 통해서 Database를 보호 할 수 있습니다.</p>
+<p>private subnet 구성을 통해 DB를 인터넷에 노출하지 않게하고 클라이언트에는 DB 접속을 위한 비밀정보를 저장하지 않은 채 오직 Crux 서버를 통해서만 데이터를 조회하도록 구성할 수 있습니다.</p>
+<p><img src="../res/img/vpc-subnet-security.jpg" alt="VPC 구성"></p>
+<h3 id="암호-보호--jwt">암호 보호 &amp; JWT</h3>
+<p><img src="../res/img/login-security.jpg" alt="로그인,jWT"></p>
+<p>MESCADAS는 적법한 권한을 가진 작업자만이 클라이언트를 이용하고 서버에 데이터 전송/조회할 수 있도록 로그인 수단이 제공됩니다.</p>
+<p>시스템 사용권한이 인가된 User의 비밀번호는 해독불가능한 암호문으로 DB에 저장됩니다.</p>
+<p>엣지 클라이언트에서 User가 로그인 시 Crux 서버는 보안키를 이용해 JWT(Json Web Token)과 공개키를 발급하며, 되돌려받아 검증된 토큰과 함께 데이터 요청을 했을 때만 클라이언트와 데이터를 교환합니다.</p>
+<p>클라이언트는 또한 서버로부터 받은 공개키를 통해 로컬 토큰을 검증하고 로그인 User의 Role 권한에 따라 특정 기능을 제한하거나 제공하도록 개발할 수 있습니다.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/KyleOpenGit/MSD-Crux-Docs/blob/main/DocFX/docs/introduction.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

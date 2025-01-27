@@ -1,0 +1,245 @@
+{
+  "source_base_path": "/home/runner/work/MSD-Crux-Docs/MSD-Crux-Docs/DocFX",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/guide/crux/crux-server.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/guide/crux/crux-server.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/guide/crux/dev-tool.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/guide/crux/dev-tool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/guide/p-guide.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/guide/p-guide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/guide/solution-structure.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/guide/solution-structure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/rest-api.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/rest-api.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/3-tier-headless-architecture.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/3-tier-headless-architecture.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/edge-clients.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/edge-clients.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/github-code-clone.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/github-code-clone.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/layered-architecture.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/layered-architecture.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/login-security.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/login-security.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/project-structure-host.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/project-structure-host.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/project-structure-layered.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/project-structure-layered.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/server-group.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/server-group.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/solution-structure-in-ide.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/solution-structure-in-ide.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/swagger-api-page.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/swagger-api-page.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/system-architecture-deployed.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/system-architecture-deployed.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/system-architecture.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/system-architecture.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "res/img/vpc-subnet-security.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "res/img/vpc-subnet-security.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
